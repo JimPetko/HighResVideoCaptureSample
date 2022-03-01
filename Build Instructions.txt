@@ -1,0 +1,10 @@
+.Net Framework 4.8 is required but older versions may function.
+Open the .sln file in Visual Studio 2015 or newer.
+
+The application is built with .NET Framework 4.8 but it is compatible with older frameworks.
+Press F5 to build the application.
+
+if you get a 'BadImage' exception, modify the build target from Any CPU to x86.
+
+if you get any 'DLL missing' exceptions, make sure to put a copy of 'TwCameraLib.dll' & 'TwCameraLibNET.dll' in the same directory as the executable.
+Let me know if you have any difficulty.

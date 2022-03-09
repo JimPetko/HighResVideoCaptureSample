@@ -1,0 +1,14 @@
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x64\Debug\PixelPeek.exe.config
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x64\Debug\PixelPeek.exe
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x64\Debug\PixelPeek.pdb
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x64\Debug\SlimDX.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x64\Debug\TwCameraLibNET.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.csproj.AssemblyReference.cache
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.csproj.SuggestedBindingRedirects.cache
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.Form1.resources
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.Properties.Resources.resources
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.csproj.GenerateResource.cache
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.csproj.CoreCompileInputs.cache
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\HighResVideoCaptureSample.csproj.CopyComplete
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\PixelPeek.exe
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x64\Debug\PixelPeek.pdb

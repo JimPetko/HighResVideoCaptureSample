@@ -1,0 +1,14 @@
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\bin\x86\Debug\Iris4k_CodeSample.exe.config
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\bin\x86\Debug\Iris4k_CodeSample.exe
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\bin\x86\Debug\Iris4k_CodeSample.pdb
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\bin\x86\Debug\SlimDX.dll
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\bin\x86\Debug\TwCameraLibNET.dll
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.csproj.AssemblyReference.cache
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.csproj.SuggestedBindingRedirects.cache
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.Form1.resources
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.Properties.Resources.resources
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.csproj.GenerateResource.cache
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.csproj.CoreCompileInputs.cache
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.csproj.CopyComplete
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.exe
+C:\Users\JPetko\Repos\Iris 4k Projects\Iris4k_CodeSample\Iris4k_CodeSample\obj\x86\Debug\Iris4k_CodeSample.pdb

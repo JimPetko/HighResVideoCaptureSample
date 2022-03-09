@@ -1,14 +1,16 @@
 # HighResolutionVideoSample
 
-Created: March 1, 2022 10:25 AM
-Last Edited Time: March 1, 2022 10:54 AM
-Stakeholders: Digital Doc
-Status: Complete
-Type: CodeSample
+Created: March 1, 2022 10:25 AM\
+Last Edited Time: March 1, 2022 10:54 AM\
+Stakeholders: Digital Doc\
+Status: Complete\
+Type: CodeSample\
+Author: James Petko (JPetko@Digi-Doc.com || Petko.James@gmail.com)
 
 # Summary
 
-Windows Form application that will stream High resolution video sources and capture with an integrated game controller listener. 
+Windows Form application that will stream High resolution video sources and capture with an integrated game controller listener. This particular application sample does not have integrated handling for older directshow protocols./
+To properly implement a full video solution, first consider the scope of supported devices.
 
 # Background
 
@@ -39,7 +41,9 @@ A Dental Imaging Acquisition Software Provider may use this code as reference in
 
 What are the contents of TwCameraLib.dll & TwCameraLibNET.dll
 
-TwCameraLib is a c++ class, generated from part of the Windows SDK package for Microsoft Media Foundation. Reference of how to use the library file can be found below. TwCameraLibNET is a wrapper class to import the functionality into Windows Forms.
+TwCameraLib is a c++ class, generated from part of the Windows SDK package for Microsoft Media Foundation. Reference of how to use the library file can be found below./
+TwCameraLibNET is a wrapper class to import the functionality into Windows Forms./
+SlimDX is an open source library which will funciton for a listener for Game Controllers.
 
 [msdn-code-gallery-microsoft/Official Windows Platform Sample/CaptureEngine video capture sample at master · microsoftarchive/msdn-code-gallery-microsoft](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/CaptureEngine%20video%20capture%20sample)
 
@@ -49,6 +53,10 @@ Open the solution (.sln) in Visual Studios 2015 or newer. .NET Framework 4.8 is 
 
 - Open the solution (.sln) in Visual Studios 2015 or newer. .NET Framework 4.8 is required to build the sample but older versions are also supported.
 - Once open, press F5 to start the build.
-- If you get a 'BadImage' exception, modify the build target from Any CPU to x86.
+- If you get a 'BadImage' exception, modify the build target from Any CPU to x86. Removing Game Controller functionality will then allow operating a camera in another platform.
 - If you get any 'DLL missing' exceptions, make sure to put a copy of 'TwCameraLib.dll' & 'TwCameraLibNET.dll' in the same directory as the executable.
-- If SlimDX
+- If SlimDX.dll is not present in the same directory as the executable, you might need to restor the NuGet Pkgs in Visual Studio./
+
+## Alternatives to Consider
+
+Capture may also funciton from a keystroke on the keyboard. If this is the case, Digital Doc would implement a listener script that will pass the Game Controller signal to a keystroke(or series of keystrokes).

@@ -54,7 +54,7 @@ namespace HighResVideoCaptureSample
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Please ensure that your camera is connected.", "Cannot retrieve Camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please ensure that your camera is connected." + ex.Message, "Cannot retrieve Camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
             if (cameras.Count != 0)
@@ -67,12 +67,23 @@ namespace HighResVideoCaptureSample
                 dxCameraControl1.StartPreview(defaultCamera, 0); //start video stream
                 try
                 {
-                    controller1 = GetJoysticks()[0]; //assign game controller listener to default game con
+                    //assign game controller listener to default game con unless there is a controller that has the same name as the camera.
+                    foreach (Joystick joystick in GetJoysticks()) 
+                    {
+                        if (joystick.Properties.InstanceName.Contains(cameras[0])) 
+                        {
+                            controller1 = joystick;
+                        }
+                        else
+                            controller1 = GetJoysticks()[0];
+
+                    }
+                    //assign game controller listener to default game con
                     gameConPollingTimer.Start(); //poll game con every 50ms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Could not find Capture Button source", "Game Controller Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Could not find Capture Button source" + ex.Message, "Game Controller Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
         }
@@ -174,6 +185,7 @@ namespace HighResVideoCaptureSample
                     // Gets the joysticks properties and sets the range for them.
                     foreach (DeviceObjectInstance deviceObject in controller1.GetObjects())
                     {
+                        Console.WriteLine(deviceObject.Name.ToString());
                         if ((deviceObject.ObjectType & ObjectDeviceType.Axis) != 0)
                         {
                             controller1.GetObjectPropertiesById((int)deviceObject.ObjectType).SetRange(-100, 100);

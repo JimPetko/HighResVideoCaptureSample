@@ -1,0 +1,117 @@
+15/03/2022 09:30:32.0473 [1661108][INFO]  [] -> CreateInstance
+15/03/2022 09:30:32.1393 [1661108][INFO]  [] -> GetCameraList
+15/03/2022 09:30:33.8413 [1661108][INFO]  [] -> StopPreview
+15/03/2022 09:30:56.4333 [1312960][INFO]  [] -> CreateInstance
+15/03/2022 09:30:56.5283 [1312960][INFO]  [] -> GetCameraList
+15/03/2022 09:30:56.5323 [1312960][INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:30:56.5333 [1312960][INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:30:56.5343 [1312960][INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:30:56.5453 [1312960][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:30:57.3133 [1312960][INFO]  [] -> GetMediaTypeList
+15/03/2022 09:30:57.3153 [1312960][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:30:57.8253 [1312960][INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:31:53.7851 [45736] [INFO]  [] -> CreateInstance
+15/03/2022 09:31:53.8761 [45736] [INFO]  [] -> GetCameraList
+15/03/2022 09:31:53.8811 [45736] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:31:53.8821 [45736] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:31:53.8831 [45736] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:31:53.8861 [45736] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:31:54.1161 [45736] [INFO]  [] -> GetMediaTypeList
+15/03/2022 09:31:54.1191 [45736] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:31:54.5511 [45736] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:32:05.5328 [45736] [INFO]  [] -> StopPreview
+15/03/2022 09:32:47.7389 [39160] [INFO]  [] -> CreateInstance
+15/03/2022 09:32:47.8299 [39160] [INFO]  [] -> GetCameraList
+15/03/2022 09:32:47.8339 [39160] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:32:47.8349 [39160] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:32:47.8369 [39160] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:32:47.8389 [39160] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:32:48.3189 [39160] [INFO]  [] -> GetMediaTypeList
+15/03/2022 09:32:48.3209 [39160] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:32:48.8359 [39160] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:33:02.3956 [39160] [INFO]  [] -> StopPreview
+15/03/2022 09:43:23.0101 [3268]  [INFO]  [] -> CreateInstance
+15/03/2022 09:43:23.0921 [3268]  [INFO]  [] -> GetCameraList
+15/03/2022 09:43:23.0961 [3268]  [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:43:23.0971 [3268]  [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:43:23.0981 [3268]  [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:43:23.1011 [3268]  [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:43:23.5906 [3268]  [INFO]  [] -> GetMediaTypeList
+15/03/2022 09:43:23.5926 [3268]  [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:43:24.1186 [3268]  [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:43:27.8208 [3268]  [INFO]  [] -> StopPreview
+15/03/2022 09:45:04.2002 [60284] [INFO]  [] -> CreateInstance
+15/03/2022 09:45:04.2872 [60284] [INFO]  [] -> GetCameraList
+15/03/2022 09:45:04.2932 [60284] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:45:04.2942 [60284] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:45:04.2952 [60284] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:45:04.2992 [60284] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:45:04.7422 [60284] [INFO]  [] -> GetMediaTypeList
+15/03/2022 09:45:04.7442 [60284] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:45:05.3102 [60284] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:46:49.3350 [66728] [INFO]  [] -> CreateInstance
+15/03/2022 09:46:49.4240 [66728] [INFO]  [] -> GetCameraList
+15/03/2022 09:46:49.4290 [66728] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 09:46:49.4300 [66728] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 09:46:49.4310 [66728] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 09:46:49.4340 [66728] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:46:49.9360 [66728] [INFO]  [] -> GetMediaTypeList
+15/03/2022 09:46:49.9380 [66728] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 09:46:50.4760 [66728] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 09:46:53.2408 [66728] [INFO]  [] -> TakePhoto
+15/03/2022 09:46:53.3048 [66728] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 09:46:53.3659 [66728] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 09:46:53.4278 [66728] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 09:47:03.6888 [66728] [INFO]  [] -> TakePhoto
+15/03/2022 09:47:03.7458 [66728] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:22.6592 [95652] [INFO]  [] -> CreateInstance
+15/03/2022 10:04:22.7522 [95652] [INFO]  [] -> GetCameraList
+15/03/2022 10:04:22.7592 [95652] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 10:04:22.7602 [95652] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 10:04:22.7612 [95652] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 10:04:22.7652 [95652] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:04:23.3202 [95652] [INFO]  [] -> GetMediaTypeList
+15/03/2022 10:04:23.3222 [95652] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:04:23.8102 [95652] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 10:04:29.1193 [95652] [INFO]  [] -> StopPreview
+15/03/2022 10:04:43.5363 [99672] [INFO]  [] -> CreateInstance
+15/03/2022 10:04:43.6173 [99672] [INFO]  [] -> GetCameraList
+15/03/2022 10:04:43.6233 [99672] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 10:04:43.6243 [99672] [INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 10:04:43.6253 [99672] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 10:04:43.6303 [99672] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:04:43.9123 [99672] [INFO]  [] -> GetMediaTypeList
+15/03/2022 10:04:43.9143 [99672] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:04:44.3703 [99672] [INFO]  [] -> StartPreview media type index: 0
+15/03/2022 10:04:48.4971 [99672] [INFO]  [] -> TakePhoto
+15/03/2022 10:04:48.5521 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:48.6101 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:48.6701 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:48.7336 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:48.7966 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:04:48.8576 [99672] [INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:05:00.6193 [99672] [INFO]  [] -> StopPreview
+15/03/2022 10:23:52.8613 [142036][INFO]  [] -> CreateInstance
+15/03/2022 10:23:52.9553 [142036][INFO]  [] -> GetCameraList
+15/03/2022 10:23:52.9613 [142036][INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 10:23:52.9623 [142036][INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 10:23:52.9633 [142036][INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 10:23:52.9673 [142036][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:23:53.4453 [142036][INFO]  [] -> GetMediaTypeList
+15/03/2022 10:23:53.4603 [142036][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:23:53.9933 [142036][INFO]  [] -> StartPreview media type index: 0
+15/03/2022 10:24:05.1082 [142036][INFO]  [] -> StopPreview
+15/03/2022 10:24:36.7688 [125220][INFO]  [] -> CreateInstance
+15/03/2022 10:24:36.8598 [125220][INFO]  [] -> GetCameraList
+15/03/2022 10:24:36.8658 [125220][INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&2115e7df&2&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+15/03/2022 10:24:36.8668 [125220][INFO]  [] -> Camera name: HYBRIS CAMERA
+15/03/2022 10:24:36.8678 [125220][INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+15/03/2022 10:24:36.8698 [125220][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:24:37.3198 [125220][INFO]  [] -> GetMediaTypeList
+15/03/2022 10:24:37.3238 [125220][INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+15/03/2022 10:24:37.8448 [125220][INFO]  [] -> StartPreview media type index: 0
+15/03/2022 10:24:39.9103 [125220][INFO]  [] -> TakePhoto
+15/03/2022 10:24:39.9753 [125220][INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:24:40.0363 [125220][INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:24:40.1004 [125220][INFO]  [] -> TakePhoto, already pending...
+15/03/2022 10:24:43.5478 [125220][INFO]  [] -> StopPreview

@@ -115,3 +115,176 @@
 15/03/2022 10:24:40.0363 [125220][INFO]  [] -> TakePhoto, already pending...
 15/03/2022 10:24:40.1004 [125220][INFO]  [] -> TakePhoto, already pending...
 15/03/2022 10:24:43.5478 [125220][INFO]  [] -> StopPreview
+22/03/2022 10:04:59.4996 [78788] [INFO]  [] -> CreateInstance
+22/03/2022 10:04:59.5746 [78788] [INFO]  [] -> GetCameraList
+22/03/2022 10:04:59.5796 [78788] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 10:04:59.5806 [78788] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 10:04:59.5816 [78788] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 10:04:59.5836 [78788] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 10:04:59.7756 [78788] [INFO]  [] -> GetMediaTypeList
+22/03/2022 10:04:59.7776 [78788] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 10:05:00.1276 [78788] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 10:05:05.2576 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:05.3216 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:05.3736 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:05.4316 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:22.1328 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:22.1958 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:22.2478 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:22.3078 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:23.7444 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:23.8074 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:23.8694 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:24.4559 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:24.5169 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:24.5804 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:25.2325 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:25.2955 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:27.6390 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:27.7030 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:27.7670 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:27.8311 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:27.8941 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:27.9581 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:29.9111 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:29.9741 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:30.0381 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:30.1016 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:34.4481 [78788] [INFO]  [] -> TakePhoto
+22/03/2022 10:05:34.5121 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:34.5751 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:34.6271 [78788] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 10:05:37.8105 [78788] [INFO]  [] -> StopPreview
+22/03/2022 01:36:54.7837 [91668] [INFO]  [] -> CreateInstance
+22/03/2022 01:36:54.8617 [91668] [INFO]  [] -> GetCameraList
+22/03/2022 01:36:57.2697 [91668] [INFO]  [] -> StopPreview
+22/03/2022 01:40:43.9367 [8912]  [INFO]  [] -> CreateInstance
+22/03/2022 01:40:44.0187 [8912]  [INFO]  [] -> GetCameraList
+22/03/2022 01:40:46.2337 [8912]  [INFO]  [] -> StopPreview
+22/03/2022 01:53:04.8957 [43980] [INFO]  [] -> CreateInstance
+22/03/2022 01:53:04.9897 [43980] [INFO]  [] -> GetCameraList
+22/03/2022 01:53:20.7644 [58748] [INFO]  [] -> CreateInstance
+22/03/2022 01:53:20.8434 [58748] [INFO]  [] -> GetCameraList
+22/03/2022 01:53:20.8474 [58748] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 01:53:20.8484 [58748] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 01:53:20.8484 [58748] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 01:53:20.8514 [58748] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 01:53:21.2314 [58748] [INFO]  [] -> GetMediaTypeList
+22/03/2022 01:53:21.2394 [58748] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 01:53:21.7764 [58748] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 01:53:26.4252 [58748] [INFO]  [] -> TakePhoto
+22/03/2022 01:53:26.4892 [58748] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 01:53:26.5512 [58748] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 01:53:26.6133 [58748] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 01:53:26.6773 [58748] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 01:53:48.2491 [58748] [INFO]  [] -> StopPreview
+22/03/2022 02:31:31.5791 [95580] [INFO]  [] -> CreateInstance
+22/03/2022 02:31:31.6861 [95580] [INFO]  [] -> GetCameraList
+22/03/2022 02:31:31.6991 [95580] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:31:31.7001 [95580] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 02:31:31.7051 [95580] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:31:31.7091 [95580] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:31:32.1431 [95580] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:31:32.1451 [95580] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:31:32.6361 [95580] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:31:39.0681 [95580] [INFO]  [] -> StopPreview
+22/03/2022 02:31:52.8851 [56552] [INFO]  [] -> CreateInstance
+22/03/2022 02:31:52.9771 [56552] [INFO]  [] -> GetCameraList
+22/03/2022 02:31:52.9821 [56552] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:31:52.9841 [56552] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 02:31:52.9851 [56552] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:31:52.9871 [56552] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:31:53.2771 [56552] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:31:53.2791 [56552] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:31:53.6901 [56552] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:31:57.2110 [56552] [INFO]  [] -> StopPreview
+22/03/2022 02:32:10.2560 [11008] [INFO]  [] -> CreateInstance
+22/03/2022 02:32:10.3640 [11008] [INFO]  [] -> GetCameraList
+22/03/2022 02:32:10.3700 [11008] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:32:10.3740 [11008] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 02:32:10.3760 [11008] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:32:10.3800 [11008] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:32:10.6920 [11008] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:32:10.6940 [11008] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:32:11.1280 [11008] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:32:15.5752 [11008] [INFO]  [] -> StopPreview
+22/03/2022 02:44:43.9832 [3308]  [INFO]  [] -> CreateInstance
+22/03/2022 02:44:44.0742 [3308]  [INFO]  [] -> GetCameraList
+22/03/2022 02:44:49.6383 [3308]  [INFO]  [] -> StopPreview
+22/03/2022 02:45:02.1153 [77280] [INFO]  [] -> CreateInstance
+22/03/2022 02:45:02.2013 [77280] [INFO]  [] -> GetCameraList
+22/03/2022 02:45:02.2053 [77280] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:45:02.2063 [77280] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 02:45:02.2073 [77280] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:45:02.2103 [77280] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:45:02.6163 [77280] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:45:02.6193 [77280] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:45:03.1733 [77280] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:45:20.6414 [77280] [INFO]  [] -> StopPreview
+22/03/2022 02:45:39.9055 [36248] [INFO]  [] -> CreateInstance
+22/03/2022 02:45:39.9945 [36248] [INFO]  [] -> GetCameraList
+22/03/2022 02:45:39.9985 [36248] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&3ae18553&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:45:39.9995 [36248] [INFO]  [] -> Camera name: IRIS X80 
+22/03/2022 02:45:40.0005 [36248] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:45:40.0035 [36248] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:45:40.2995 [36248] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:45:40.3005 [36248] [INFO]  [] -> InitializeCamera: IRIS X80 
+22/03/2022 02:45:40.7225 [36248] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:46:07.1965 [36248] [INFO]  [] -> TakePhoto
+22/03/2022 02:46:07.2575 [36248] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 02:46:07.3235 [36248] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 02:46:07.3865 [36248] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 02:46:07.4505 [36248] [INFO]  [] -> TakePhoto, already pending...
+22/03/2022 02:46:14.7882 [36248] [INFO]  [] -> StopPreview
+22/03/2022 02:58:09.5959 [60768] [INFO]  [] -> CreateInstance
+22/03/2022 02:58:10.0819 [60768] [INFO]  [] -> GetCameraList
+22/03/2022 02:58:10.0869 [60768] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_2560&pid_c1d1&mi_00#6&7de18d2&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+22/03/2022 02:58:10.0879 [60768] [INFO]  [] -> Camera name: HYBRIS CAMERA
+22/03/2022 02:58:10.0889 [60768] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+22/03/2022 02:58:10.0919 [60768] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+22/03/2022 02:58:11.2199 [60768] [INFO]  [] -> GetMediaTypeList
+22/03/2022 02:58:11.2209 [60768] [INFO]  [] -> InitializeCamera: HYBRIS CAMERA
+22/03/2022 02:58:11.6789 [60768] [INFO]  [] -> StartPreview media type index: 0
+22/03/2022 02:59:17.2092 [60768] [INFO]  [] -> StopPreview
+07/04/2022 07:57:20.5216 [23232] [INFO]  [] -> CreateInstance
+07/04/2022 07:57:20.6496 [23232] [INFO]  [] -> GetCameraList
+07/04/2022 07:57:20.6546 [23232] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&2827d4ae&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+07/04/2022 07:57:20.6556 [23232] [INFO]  [] -> Camera name: IRIS X80 
+07/04/2022 07:57:20.6566 [23232] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+07/04/2022 07:57:20.6606 [23232] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 07:57:21.2056 [23232] [INFO]  [] -> GetMediaTypeList
+07/04/2022 07:57:21.2076 [23232] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 07:57:21.6656 [23232] [INFO]  [] -> StartPreview media type index: 0
+07/04/2022 07:57:29.4918 [23232] [INFO]  [] -> StopPreview
+07/04/2022 08:16:11.8058 [24840] [INFO]  [] -> CreateInstance
+07/04/2022 08:16:11.9288 [24840] [INFO]  [] -> GetCameraList
+07/04/2022 08:16:11.9328 [24840] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&2827d4ae&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+07/04/2022 08:16:11.9338 [24840] [INFO]  [] -> Camera name: IRIS X80 
+07/04/2022 08:16:11.9348 [24840] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+07/04/2022 08:16:11.9408 [24840] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:16:12.3638 [24840] [INFO]  [] -> GetMediaTypeList
+07/04/2022 08:16:12.3658 [24840] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:16:12.9018 [24840] [INFO]  [] -> StartPreview media type index: 0
+07/04/2022 08:16:19.3948 [24840] [INFO]  [] -> StopPreview
+07/04/2022 08:18:08.8968 [26752] [INFO]  [] -> CreateInstance
+07/04/2022 08:18:09.0088 [26752] [INFO]  [] -> GetCameraList
+07/04/2022 08:18:09.0128 [26752] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&2827d4ae&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+07/04/2022 08:18:09.0138 [26752] [INFO]  [] -> Camera name: IRIS X80 
+07/04/2022 08:18:09.0148 [26752] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+07/04/2022 08:18:09.0178 [26752] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:18:09.4238 [26752] [INFO]  [] -> GetMediaTypeList
+07/04/2022 08:18:09.4248 [26752] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:18:09.9598 [26752] [INFO]  [] -> StartPreview media type index: 0
+07/04/2022 08:18:12.3580 [26752] [INFO]  [] -> TakePhoto
+07/04/2022 08:18:27.2823 [26752] [INFO]  [] -> TakePhoto
+07/04/2022 08:18:34.0435 [26752] [INFO]  [] -> StopPreview
+07/04/2022 08:19:37.6655 [25560] [INFO]  [] -> CreateInstance
+07/04/2022 08:19:37.7575 [25560] [INFO]  [] -> GetCameraList
+07/04/2022 08:19:37.7615 [25560] [INFO]  [] -> Camera symbolic link: \\?\usb#vid_20f1&pid_0404&mi_00#6&2827d4ae&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+07/04/2022 08:19:37.7625 [25560] [INFO]  [] -> Camera name: IRIS X80 
+07/04/2022 08:19:37.7635 [25560] [INFO]  [] -> Camera category GUID: {E5323777-F976-4F5B-9B55-B94699C46E44}
+07/04/2022 08:19:37.7675 [25560] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:19:38.2025 [25560] [INFO]  [] -> GetMediaTypeList
+07/04/2022 08:19:38.2045 [25560] [INFO]  [] -> InitializeCamera: IRIS X80 
+07/04/2022 08:19:38.7595 [25560] [INFO]  [] -> StartPreview media type index: 0
+07/04/2022 08:19:41.0117 [25560] [INFO]  [] -> StopPreview

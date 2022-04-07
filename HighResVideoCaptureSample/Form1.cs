@@ -8,7 +8,7 @@
  * Date: 2/22/2022
  */
 
-using SlimDX.DirectInput;
+using SharpDX.DirectInput;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,18 +19,14 @@ namespace HighResVideoCaptureSample
 {
     public partial class Form1 : Form
     {
-        private Joystick controller1;
-        private DirectInput DInput = new DirectInput();
-        private bool isFirst = true;
-
         //GameController variables.
-        private int yValue = 0;
+        private DirectInput Input = new DirectInput();
+        
 
-        private int xValue = 0;
-        private int zValue = 0;
-        private int rotationZValue = 0;
-        private int rotationXValue = 0;
-        private int rotationYValue = 0;
+        List<DeviceInstance> directInputList = new List<DeviceInstance>();
+        private DirectInput directInput = new DirectInput();
+        Guid joystickGuid = Guid.Empty;
+        public Joystick joystick;
 
         public Form1()
         {
@@ -51,6 +47,7 @@ namespace HighResVideoCaptureSample
                 Console.WriteLine("Camera: " + cameras[0]);
                 this.Text = "Camera Capture: " + cameras[0];
                 defaultCamera = cameras[0];
+                
             }
             catch (Exception ex)
             {
@@ -67,25 +64,22 @@ namespace HighResVideoCaptureSample
                 dxCameraControl1.StartPreview(defaultCamera, 0); //start video stream
                 try
                 {
-                    //assign game controller listener to default game con unless there is a controller that has the same name as the camera.
-                    foreach (Joystick joystick in GetJoysticks()) 
+                    
+                    if(Init_JoyStick()) //Inialize the Joystick
                     {
-                        if (joystick.Properties.InstanceName.Contains(cameras[0])) 
-                        {
-                            controller1 = joystick;
-                        }
-                        else
-                            controller1 = GetJoysticks()[0];
-
+                        gameConPollingTimer.Start(); //poll game con every 50ms
                     }
-                    //assign game controller listener to default game con
-                    gameConPollingTimer.Start(); //poll game con every 50ms
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Could not find Capture Button source" + ex.Message, "Game Controller Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e) 
+        {
+            dxCameraControl1.Size = new Size(this.Size.Width-5,this.Size.Height-5);
         }
 
         /// <summary>
@@ -111,95 +105,54 @@ namespace HighResVideoCaptureSample
         /// <param name="e"></param>
         private void gameConPollingTimer_Tick(object sender, EventArgs e)
         {
-            PollGameCon(controller1, 0);
-        }
+            // Acquire the joystick
+            joystick.Acquire();
 
-        private void PollGameCon(Joystick stick, int id)
+            // Poll events from joystick
+
+            joystick.Poll();
+            var datas = joystick.GetBufferedData();
+            foreach (var press in datas)
+            {
+                if (press.Value != 0)
+                {
+                    dxCameraControl1.TakePhotoAsync();//Async capture to not interupt the stream. If pause feature is desired, implement it here.
+                    System.Media.SystemSounds.Beep.Play();
+                }
+            }
+        }
+        private bool Init_JoyStick()
         {
-            // Creates an object from the class JoystickState.
-            JoystickState state = new JoystickState();
-            state = stick.GetCurrentState();
-            //even if not occupied by hardware, each game controller defined in SlimDX requires Joystick States to be initialized.
+            foreach (var deviceInstance in directInput.GetDevices(DeviceType.Gamepad, DeviceEnumerationFlags.AllDevices))
+                joystickGuid = deviceInstance.InstanceGuid;
 
-            #region UnusedGameConVariables
+            // If Gamepad not found, look for a Joystick
+            if (joystickGuid == Guid.Empty)
+                foreach (var deviceInstance in directInput.GetDevices(DeviceType.Joystick, DeviceEnumerationFlags.AllDevices))
+                    joystickGuid = deviceInstance.InstanceGuid;
 
-            yValue = -state.Y;
-            xValue = state.X;
-            zValue = state.Z;
-            rotationZValue = state.RotationZ;
-            rotationXValue = state.RotationY;
-            rotationYValue = state.RotationX;
-            int th = 0;
-            int[] z = state.GetSliders();
-            th = z[0];
-            if (z[0] == 0 && isFirst)
+            // If Joystick not found, throws an error
+            if (joystickGuid == Guid.Empty)
             {
-                th = 0;
-            }
-            else
-            {
-                if (isFirst)
-                    isFirst = false;
-
-                if (th >= 0)
-                    th = 50 - th / 2;
-                else
-                    th = -th / 2 + 50;
+                return false;
             }
 
-            #endregion UnusedGameConVariables
+            // Instantiate the joystick
+            joystick = new Joystick(directInput, joystickGuid);
 
-            bool[] buttons = state.GetButtons(); // Stores the number of each button on the gamepad into the bool[] butons.
-            //Here is an example on how to use this for the joystick in the first index of the array list
-            if (id == 0)
-            {
-                // This is when button 0 of the gamepad is pressed, the label will change. Button 0 should be the square button.
-                foreach (var btn in buttons)
-                {
-                    if (btn)//When the button is Pressed
-                    {
-                        dxCameraControl1.TakePhotoAsync();//Async capture to not interupt the stream. If pause feature is desired, implement it here.
-                        System.Media.SystemSounds.Beep.Play();
-                        Console.WriteLine("Button Pressed: " + btn);
-                    }
-                }
-            }
-            System.Threading.Thread.Sleep(50);
+            Console.WriteLine("Found Joystick/Gamepad with GUID: {0}", joystickGuid);
+
+            // Query all suported ForceFeedback effects
+            var allEffects = joystick.GetEffects();
+            foreach (var effectInfo in allEffects)
+                Console.WriteLine("Effect available {0}", effectInfo.Name);
+
+            // Set BufferSize in order to use buffered data.
+            joystick.Properties.BufferSize = 128;
+            return true;
         }
 
-        /// <summary>
-        /// Populate the Game Controller List, we only listen for the default controller in this example app.
-        /// </summary>
-        /// <returns></returns>
-        private Joystick[] GetJoysticks()
-        {
-            List<SlimDX.DirectInput.Joystick> sticks = new List<SlimDX.DirectInput.Joystick>(); // Creates the list of joysticks connected to the computer via USB.
-
-            foreach (DeviceInstance device in DInput.GetDevices(DeviceClass.GameController, DeviceEnumerationFlags.AttachedOnly))
-            {
-                // Creates a joystick for each game device in USB Ports
-                try
-                {
-                    controller1 = new SlimDX.DirectInput.Joystick(DInput, device.InstanceGuid);
-                    controller1.Acquire();
-                    // Gets the joysticks properties and sets the range for them.
-                    foreach (DeviceObjectInstance deviceObject in controller1.GetObjects())
-                    {
-                        Console.WriteLine(deviceObject.Name.ToString());
-                        if ((deviceObject.ObjectType & ObjectDeviceType.Axis) != 0)
-                        {
-                            controller1.GetObjectPropertiesById((int)deviceObject.ObjectType).SetRange(-100, 100);
-                        }
-                    }
-
-                    // Adds how ever many joysticks are connected to the computer into the sticks list.
-                    sticks.Add(controller1);
-                }
-                catch (DirectInputException)
-                {
-                }
-            }
-            return sticks.ToArray();
-        }
+        
+       
     }
 }

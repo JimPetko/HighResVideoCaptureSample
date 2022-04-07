@@ -50,12 +50,13 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1285, 725);
             this.Controls.Add(this.dxCameraControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "High Res Video Code Sample";
-            this.MaximizeBox = false;
+            this.MaximizeBox = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.ResumeLayout(false);
             // 
             // GameCon Polling Timer

@@ -18,7 +18,6 @@ C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVide
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.csproj.GenerateResource.cache
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.csproj.CoreCompileInputs.cache
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.csproj.CopyComplete
-C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SlimDX.dll
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\TwCameraLibNET.dll
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.csproj.AssemblyReference.cache
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\HighResVideoCaptureSample.exe.config
@@ -26,3 +25,8 @@ C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVide
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\HighResVideoCaptureSample.pdb
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.exe
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\obj\x86\Debug\HighResVideoCaptureSample.pdb
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.DirectInput.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.pdb
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.DirectInput.pdb
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.DirectInput.xml

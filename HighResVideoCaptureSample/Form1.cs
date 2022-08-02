@@ -8,11 +8,13 @@
  * Date: 2/22/2022
  */
 
+using AForge.Video.DirectShow;
 using SharpDX.DirectInput;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace HighResVideoCaptureSample
@@ -21,12 +23,15 @@ namespace HighResVideoCaptureSample
     {
         //GameController variables.
         private DirectInput Input = new DirectInput();
-        
+        bool isHighRes = false;
 
         List<DeviceInstance> directInputList = new List<DeviceInstance>();
         private DirectInput directInput = new DirectInput();
         Guid joystickGuid = Guid.Empty;
         public Joystick joystick;
+
+        private FilterInfoCollection _filterInfoCollection;
+        private VideoCaptureDevice _videoDevice;
 
         public Form1()
         {
@@ -41,31 +46,41 @@ namespace HighResVideoCaptureSample
         private void Form1_Load(object sender, EventArgs e)
         {
             List<string> cameras = dxCameraControl1.GetAvailableCameras();
-            string defaultCamera = "";
-            try
+            if (cameras.Count == 0)
             {
-                Console.WriteLine("Camera: " + cameras[0]);
-                this.Text = "Camera Capture: " + cameras[0];
-                defaultCamera = cameras[0];
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Please ensure that your camera is connected." + ex.Message, "Cannot retrieve Camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-            }
-            if (cameras.Count != 0)
-            {
-                //available resolutions and renderers
-                List<string> types = dxCameraControl1.GetMediaTypeList(defaultCamera);
-                object[] resoultionIndex = types.ToArray();
-                string defaultResoltion = types[0];
-                dxCameraControl1.OnTakePhoto += DxCameraControl1_OnTakePhoto;
-                dxCameraControl1.StartPreview(defaultCamera, 0); //start video stream
+                isHighRes = false;
+                this.Size = new Size(640, 480);
+                //init AForge Interface
+                _filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                directInputList.AddRange(Input.GetDevices(DeviceClass.GameControl, DeviceEnumerationFlags.AttachedOnly));
+                foreach (AForge.Video.DirectShow.FilterInfo x in _filterInfoCollection)
+                {
+                    if (x.Name.Contains("Iris") || x.Name.Contains("IRIS") || x.Name.Contains("HYBRIS"))
+                    {
+                        this.Text = "Digital Doc Camera Capture";
+                    }
+                    if (x.Name.Contains("X80"))
+                    {
+                        this.Text = "Iris X80 Camera Capture";
+                    }
+                }
+                if (_filterInfoCollection.Count != 0)
+                {
+                    _videoDevice = new VideoCaptureDevice(_filterInfoCollection[0].MonikerString);
+                    videoPlayer.VideoSource = _videoDevice;
+
+                    videoPlayer.Size = new Size(640, 480);
+                    videoPlayer.BringToFront();
+                    videoPlayer.Start();
+                }
+                else 
+                {
+                    MessageBox.Show("Please Connect a supported camera.", "No Camera Connected");
+                    this.Close();
+                }
                 try
                 {
-                    
-                    if(Init_JoyStick()) //Inialize the Joystick
+                    if (Init_JoyStick()) //Inialize the Joystick
                     {
                         gameConPollingTimer.Start(); //poll game con every 50ms
                     }
@@ -75,11 +90,72 @@ namespace HighResVideoCaptureSample
                     MessageBox.Show("Could not find Capture Button source" + ex.Message, "Game Controller Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
+            else
+            {
+                isHighRes = true;
+                string defaultCamera = "";
+                try
+                {
+                    Console.WriteLine("Camera: " + cameras[0]);
+                    this.Text = "Camera Capture: " + cameras[0];
+                    defaultCamera = cameras[0];
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Please ensure that your camera is connected.\r\n" + ex.Message, "Cannot retrieve Camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Application.Exit();
+                }
+                if (cameras.Count != 0)
+                {
+                    //available resolutions and renderers
+                    List<string> types = dxCameraControl1.GetMediaTypeList(defaultCamera);
+                    object[] resoultionIndex = types.ToArray();
+                    string defaultResoltion = types[0];
+                    dxCameraControl1.OnTakePhoto += DxCameraControl1_OnTakePhoto;
+                    dxCameraControl1.StartPreview(defaultCamera, 0); //start video stream
+                    try
+                    {
+
+                        if (Init_JoyStick()) //Inialize the Joystick
+                        {
+                            gameConPollingTimer.Start(); //poll game con every 50ms
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Could not find Capture Button source" + ex.Message, "Game Controller Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                }
+            }
+        }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            try
+            {
+                if (gameConPollingTimer.Enabled &&!isHighRes)
+                {
+                    _videoDevice.Stop();
+
+                    Thread.Sleep(1000);
+                }
+
+                Dispose();
+                GC.Collect();
+                Environment.Exit(0);
+            }
+            catch { Console.WriteLine("On Close Error"); }
         }
 
-        private void Form1_SizeChanged(object sender, EventArgs e) 
+        private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            dxCameraControl1.Size = new Size(this.Size.Width-5,this.Size.Height-5);
+            dxCameraControl1.Size = new Size(this.Size.Width - 5, this.Size.Height - 5);
         }
 
         /// <summary>
@@ -152,7 +228,7 @@ namespace HighResVideoCaptureSample
             return true;
         }
 
-        
-       
+
+
     }
 }

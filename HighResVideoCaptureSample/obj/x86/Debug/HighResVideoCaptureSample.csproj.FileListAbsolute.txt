@@ -30,3 +30,15 @@ C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVide
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.pdb
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.DirectInput.pdb
 C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\SharpDX.DirectInput.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Controls.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Imaging.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Math.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Video.DirectShow.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Video.dll
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Controls.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Imaging.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Math.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Video.xml
+C:\Users\JPetko\Repos\Digital Doc Projects\HighResVideoCaptureSample\HighResVideoCaptureSample\bin\x86\Debug\AForge.Video.DirectShow.xml

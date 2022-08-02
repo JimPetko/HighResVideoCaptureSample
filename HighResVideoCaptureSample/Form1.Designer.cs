@@ -33,6 +33,7 @@
             this.SuspendLayout();
             this.dxCameraControl1 = new TwCameraLib.DxCameraControl();
             this.gameConPollingTimer = new System.Windows.Forms.Timer(this.components);
+            this.videoPlayer = new AForge.Controls.VideoSourcePlayer();
             // 
             // dxCameraControl1
             // 
@@ -43,6 +44,16 @@
             this.dxCameraControl1.TabIndex = 0;
             this.dxCameraControl1.Text = "dxCameraControl1";
             // 
+            // videoPlayer
+            // 
+            this.videoPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.videoPlayer.Location = new System.Drawing.Point(0, 24);
+            this.videoPlayer.Name = "videoPlayer";
+            this.videoPlayer.Size = new System.Drawing.Size(1280, 720);
+            this.videoPlayer.TabIndex = 4;
+            this.videoPlayer.Text = "videoSourcePlayer1";
+            this.videoPlayer.VideoSource = null;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -50,6 +61,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1285, 725);
             this.Controls.Add(this.dxCameraControl1);
+            this.Controls.Add(this.videoPlayer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -66,6 +78,7 @@
         }
 
         #endregion
+        private AForge.Controls.VideoSourcePlayer videoPlayer;
         private TwCameraLib.DxCameraControl dxCameraControl1;
         private System.Windows.Forms.Timer gameConPollingTimer;
     }
